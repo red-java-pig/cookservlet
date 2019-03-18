@@ -67,7 +67,9 @@ public class LoginServlet extends HttpServlet {
         if ("admin".equals(name) && "123".equals(password)) {
             request.getRequestDispatcher("success.html").forward(request, response);
         } else {
-            response.sendRedirect("fail.html");
+            //response.sendRedirect("fail.html");
+            response.setStatus(301);
+            response.setHeader("Location", "fail.html");
         }
 
 
