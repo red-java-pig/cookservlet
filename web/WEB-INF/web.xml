@@ -17,6 +17,18 @@
         <servlet-name>UploadPhotoServlet</servlet-name>
         <servlet-class>UploadPhotoServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>HeroListServlet</servlet-name>
+        <servlet-class>servlet.HeroListServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>HeroCountServlet</servlet-name>
+        <servlet-class>servlet.HeroCountServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>HeroAddServlet</servlet-name>
+        <servlet-class>servlet.HeroAddServlet</servlet-class>
+    </servlet>
 
     <servlet-mapping>
         <servlet-name>HelloServlet</servlet-name>
@@ -33,6 +45,18 @@
     <servlet-mapping>
         <servlet-name>UploadPhotoServlet</servlet-name>
         <url-pattern>/uploadPhoto</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>HeroListServlet</servlet-name>
+        <url-pattern>/listHero</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>HeroCountServlet</servlet-name>
+        <url-pattern>/countHero</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>HeroAddServlet</servlet-name>
+        <url-pattern>/addHero</url-pattern>
     </servlet-mapping>
 
 </web-app>
