@@ -41,6 +41,10 @@
         <servlet-name>HeroUpdateServlet</servlet-name>
         <servlet-class>servlet.HeroUpdateServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>SubmitServlet</servlet-name>
+        <servlet-class>servlet.SubmitServlet</servlet-class>
+    </servlet>
 
     <servlet-mapping>
         <servlet-name>HelloServlet</servlet-name>
@@ -81,6 +85,10 @@
     <servlet-mapping>
         <servlet-name>HeroUpdateServlet</servlet-name>
         <url-pattern>/updateHero</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>SubmitServlet</servlet-name>
+        <url-pattern>/submitServlet</url-pattern>
     </servlet-mapping>
 
 </web-app>
